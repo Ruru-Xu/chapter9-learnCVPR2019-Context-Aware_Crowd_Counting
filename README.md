@@ -265,9 +265,41 @@ you will get：
 
 ![1562034307126](img/1562034307126.png)
 
+- visualization Network：
 
+  Add these code in **test.py**, inside the location **‘for i,(img,gt_dmap) in enumerate(tqdm(dataloader)):’**
 
+          from tensorboardX import SummaryWriter    
+              with SummaryWriter(comment='crowdcount') as w:
+                  w.add_graph(model, (img, ))
 
+Then run 
+
+```
+python test_my.py
+```
+
+![1562585584053](img/1562585584053.png)
+
+![1562585616261](img/1562585616261.png)
+
+And then run 
+
+```
+tensorboard --logdir xxxx  #xxx------the Path of 'run'
+```
+
+![1562586184644](img/1562586184644.png)
+
+run
+
+```
+firefox http://imc-NO108:6008/
+```
+
+![1562586125013](img/1562586125013.png)
+
+------
 
 ## Training
 
