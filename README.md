@@ -322,3 +322,5 @@ img=img.to(device)gt_dmap=gt_dmap.to(device)# forward propagationet_dmap=model(i
 ![1562035196236](img/1562035196236.png)
 
 ![1562035537286](img/1562035537286.png)
+
+![1563064735193](1563064735193.png)
